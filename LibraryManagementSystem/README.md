@@ -1,4 +1,4 @@
-# 📚 Library Management System (Java)
+# 📚 Library Management System 
 
 This is a **project** I built in Java to practice Object-Oriented Programming concepts.  
 It’s a simple **Library Management System** where you can:  
