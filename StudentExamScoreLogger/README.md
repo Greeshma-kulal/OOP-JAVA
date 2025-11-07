@@ -38,21 +38,7 @@ Expected: All tests should pass with no duplicate or corrupted lines.
 The method below ensures only one thread writes at a time:
 public synchronized void writeRecord(ExamRecord record)
 
-## System Diagram
-                 SimulationDriver (main)
-                           |
-         ------------------------------------------------
-         |                      |                      |
-         v                      v                      v
-   SubmissionTask         SubmissionTask         SubmissionTask
-      (Thread 1)             (Thread 2)             (Thread 3)
-               \            Shared Writer          /
-                \              |                  /
-                 \             v                 /
-                  -----> ResultFileWriter (synchronized)
-                                   |
-                                   v
-                           exam_results.csv
+
 
 ## Requirements Covered
 ✔ Multi-threading  
